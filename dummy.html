@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Design Thinking</title>
+    <link href="https://fonts.googleapis.com/css?family=Teko:400,700" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <style type="text/css">
+        body {
+            background: #00838f;
+            background: -webkit-linear-gradient(to left, #00838f, #37474f);
+            background: linear-gradient(to left, #00838f, #37474f);
+            color: #fff;
+            width: 80%;
+            margin: 5% 10%;
+        }
+        
+        .heading-main {
+            font-family: 'Teko', sans-serif;
+            color: #fb8c00;
+            font-size: 40px;
+            text-align: center;
+        }
+        
+        .heading-name {
+            color: #9e9e9e;
+            font-size: 20px;
+            text-align: center;
+        }
+        
+        button {
+            width: 150px;
+        }
+        
+        input {
+            max-width: 300px;
+        }
+        
+        form div {
+            font-size: 16px;
+        }
+        
+        .required {
+            font-size: 20px;
+            color: #e53935;
+        }
+        
+        .heading-sub {
+            font-size: 15px;
+            color: #e53935;
+            font-weight: bold;
+        }
+        
+        textarea {
+            max-width: 500px;
+        }
+        
+        .hide {
+            display: none;
+        }
+        .msg-div {
+            font-family: 'Teko', sans-serif;
+            color: #fb8c00;
+            font-size: 30px;
+        }
+    </style>
+
+</head>
+
+<body class="index">
+
+    <div class="row">
+        <div class="col-lg-12 ">
+            <p class="heading-main">BIMTECH GRS - One Stop Solution For Your College Issues <span class="heading-name"> by Group 7</span></p>
+            <p class="heading-name heading-sub"> * Required </p>
+            <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;"></iframe>
+            <form action="https://docs.google.com/forms/d/e/1FAIpQLSeqv9dVahq5WQEGTDMT1DDyMIx5ITG29sAah3dKHv2k20XnFA/formResponse" target="hidden_iframe" method="POST" id="contactForm">
+                <div class="row">
+                    <div class="col-md-6 col-md-offset-5 ">
+
+                        <div class="form-group">
+                            <label>Name<span class="required"> *</span></label>
+                            <input type="text" class="form-control" placeholder="Your Name" id="name" name="entry.1584710426">
+                        </div>
+                        <div class="form-group">
+                            <label>Email<span class="required"> *</span></label>
+                            <input type="email" class="form-control" placeholder="Your Email" id="email" name="entry.1601801803">
+                        </div>
+                        <div class="form-group">
+                            <label>Roll Number</label>
+                            <input type="text" class="form-control" placeholder="Your Roll Number" id="phone" name="entry.1108648679">
+                        </div>
+                        <div class="form-group">
+                            <label>Location Of Issue<span class="required"> *</span></label>
+                            <br>
+
+                            <input type="radio" name="entry.1442603498" value="Campus" checked> Campus
+                            <br>
+                            <input type="radio" name="entry.1442603498" value="Takshashila"> Takshashila
+                            <br>
+                            <input type="radio" name="entry.1442603498" value="Gargi"> Gargi
+                            <br>
+                            <input type="radio" name="entry.1442603498" value="AB Hostel"> AB Hostel
+                            <br>
+                            <input type="radio" name="entry.1442603498" value="Nalanda"> Nalanda
+                            <br>
+                            <input type="radio" name="entry.1442603498" value="Cafe"> Cafe
+                            <br>
+                            <input type="radio" name="entry.1442603498" value="Mess"> Mess
+                            <br>
+                            <input type="radio" name="entry.1442603498" value="Others"> Others
+                            <br>
+                            <br>
+
+                            <label>Problem To Be Addressed<span class="required"> *</span></label>
+                            <br>
+
+                            <input type="radio" name="entry.1045390285" value="Plumbing" checked> Plumbing
+                            <br>
+                            <input type="radio" name="entry.1045390285" value="Electrical"> Electrical
+                            <br>
+                            <input type="radio" name="entry.1045390285" value="Carpentary"> Carpentary
+                            <br>
+                            <input type="radio" name="entry.1045390285" value="Projector/ System/Sound/Classroom"> Projector/ System/ Sound/ Classroom
+                            <br>
+                            <input type="radio" name="entry.1045390285" value="Internet(Hostel/Campus/Wifi)"> Internet (Hostel/ Campus/ Wifi)
+                            <br>
+                            <input type="radio" name="entry.1045390285" value="Amenities( Library/Lab/Sports/Cycle)"> Amenities (Library/ Lab/ Sports/ Cycle)
+                            <br>
+                            <input type="radio" name="entry.1045390285" value="Food ( Cafe/CCD/Mess)"> Food (Cafe/ CCD/ Mess)
+                            <br>
+                        </div>
+                        <div class="form-group">
+                            <label>Describe your problem along with your details of your Cluster/ Room/ Class</label>
+                            <br>
+                            <textarea class="form-control" rows="4" placeholder="Explain the issue in detail" name="entry.1836387614"></textarea>
+                        </div>
+                    </div>
+                    <div class="clearfix"></div>
+                    <br>
+                    <div class="col-md-6 col-md-offset-5 submit-button">
+                        <button type="submit" class="btn btn-default" disabled="disabled">Send</button>
+                        <p class="msg-div hide">Thanks for submitting your request!</p>
+                    </div>
+                </div>
+            </form>
+
+        </div>
+    </div>
+    <script type="text/javascript">
+        $(document).ready(function() {
+
+            /*$('button[type="submit"]').prop('disabled', true);*/
+
+            $('#name').on("change keyup", function() {
+                if ($(this).val() != '') {
+                    $('button[type="submit"]').prop('disabled', false);
+                }
+
+                if ($("#email").val() == "") {
+                    $('button[type="submit"]').prop('disabled', true);
+                } else {
+                    $('button[type="submit"]').prop('disabled', false);
+                }
+            });
+
+            $('#email').on("change keyup", function() {
+                var userinput = $('#email').val();
+                var pattern = /^([a-z\d!#$%&'*+\-\/=?^_`{|}~\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF]+(\.[a-z\d!#$%&'*+\-\/=?^_`{|}~\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF]+)*|"((([ \t]*\r\n)?[ \t]+)?([\x01-\x08\x0b\x0c\x0e-\x1f\x7f\x21\x23-\x5b\x5d-\x7e\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF]|\\[\x01-\x09\x0b\x0c\x0d-\x7f\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF]))*(([ \t]*\r\n)?[ \t]+)?")@(([a-z\d\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF]|[a-z\d\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF][a-z\d\-._~\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF]*[a-z\d\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])\.)+([a-z\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF]|[a-z\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF][a-z\d\-._~\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF]*[a-z\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])\.?$/i;
+
+                if (pattern.test(userinput)) {
+                    $('button[type="submit"]').prop('disabled', false);
+                } else {
+                    $('button[type="submit"]').prop('disabled', true);
+                }
+            });
+
+            $('button[type="submit"]').click(function() {
+               $(".msg-div").removeClass("hide");
+                setTimeout(function() {
+                window.location.reload();
+                }, 3000);
+
+            });
+
+        });
+    </script>
+</body>
+
+</html>
