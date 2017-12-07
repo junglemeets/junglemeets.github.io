@@ -223,4 +223,24 @@ $(document).ready(function() {
         
     });
 	
+        $(document).ready(function() {
+            $('#name , #email, #message').on("change keyup", function() {
+                var userinput = $('#email').val();
+                var pattern = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+                if ((pattern.test(userinput)) && ($('#name').val() != '') && ($('#message').val() != '')) {
+                    $('button[type="submit"]').prop('disabled', false);
+                }
+                else {
+                    $('button[type="submit"]').prop('disabled', true);
+                }
+            });
 
+            $('button[type="submit"]').click(function() {
+               $(".msg-div").removeClass("hide");
+                setTimeout(function() {
+ /*               window.location.reload();*/
+                    window.location = window.location.href;
+                }, 3000);
+
+            });
+        });

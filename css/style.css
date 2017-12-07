@@ -2041,3 +2041,6 @@ iframe {
 .sprite.school { background-position: 0 -296px; } 
 .sprite.tribal1 { background-position: 0 -370px; } 
 
+.hide {
+            display: none;
+        }
