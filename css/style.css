@@ -2044,3 +2044,25 @@ iframe {
 .hide {
             display: none;
         }
+
+#payment-link {
+	margin-top: 30px;
+	color: #fff;
+    font-size: 23px;
+    font-family: 'Oswald', sans-serif;
+    text-transform: none;
+}
+
+#payment-text{
+	color: #666 !important;
+	font-family: 'Oswald', sans-serif;
+	font-style: 5px !important;
+}
+
+.instamojo-link{
+	width: 90%;
+ 	display:block; 
+ 	width:180px; 
+ 	margin:0 auto;
+}
+
