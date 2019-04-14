@@ -1596,3 +1596,7 @@ html,body{
     padding: 5px 0 9px 0;
 }
 
+.single-package-item img{
+    width: 360px;
+    height: 292px;
+}
